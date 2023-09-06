@@ -577,7 +577,7 @@ public class voting_client extends javax.swing.JFrame {
 //        parentpanel.validate();
         String username = jTextField1.getText();
         String password = new String(jPasswordField1.getPassword());
-
+        System.out.println(password)
         try {
             User ls = service.getUserByUserNameAndPassword(username, password);
             if (ls != null) {
